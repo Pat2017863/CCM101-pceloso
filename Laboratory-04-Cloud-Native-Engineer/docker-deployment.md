@@ -2,5 +2,6 @@
 
 ## Docker Version
 
-```bash
+Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
+
 docker --version
