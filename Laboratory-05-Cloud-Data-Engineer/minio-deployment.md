@@ -2,6 +2,8 @@
 
 ## Docker Command
 
+I used the following Docker command to deploy the MinIO server:
+
 ```bash
 docker run -d \
 -p 9000:9000 \
