@@ -74,14 +74,12 @@ If I run `sudo ufw enable` before `sudo ufw allow ssh`, the default deny incomin
 
 ## 5. Verification Results
 
-Record the actual results from the playground before submission.
-
-- Firewall status: [Write the result shown by UFW.]
-- Default incoming policy: [Write the displayed policy.]
-- Default outgoing policy: [Write the displayed policy.]
-- SSH rule: [Confirm whether the rule appears.]
-- TCP port 8080 rule: [Confirm whether the rule appears.]
-- Nginx response: [Record the actual HTTP response.]
+- **Firewall status:** Active.
+- **Default incoming policy:** Deny incoming traffic by default.
+- **Default outgoing policy:** Allow outgoing traffic by default.
+- **SSH rule:** Confirmed. TCP port 22 is allowed for incoming connections.
+- **TCP port 8080 rule:** Confirmed. TCP port 8080 is allowed for incoming connections.
+- **Nginx response:** Not successful during the initial test. The command `curl -I http://localhost:8080` returned a connection error because no container was listed by `docker ps -a`. The Nginx container must be deployed and tested again to verify a successful HTTP response.
 
 ## 6. Conclusion
 
